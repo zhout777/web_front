@@ -1,0 +1,75 @@
+/*在此完成CSS样式设置*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    background-color: black;
+}
+
+header>.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header>.container>a {
+    display: block;
+    float: left;
+    margin: 17.2px 25px;
+    color: white;
+    font-size: 28px;
+}
+
+header>.container>nav {
+    float: right;
+}
+
+header>.container>nav>a {
+    display: block;
+    width: 80px;
+    height: 73px;
+    float: left;
+    line-height: 73px;
+    text-align: center;
+    color: white;
+}
+
+header>.container>nav>.Home {
+    background-color: #433b90;
+}
+
+header>.container>nav>.Course {
+    background-color: #017fcb;
+}
+
+header>.container>nav>.Actual {
+    background-color: #78b917;
+}
+
+header>.container>nav>.Plan {
+    background-color: #feb800;
+}
+
+header>.container>nav>.FAQ {
+    background-color: #f27c01;
+}
+
+header>.container>nav>.Notes {
+    background-color: #d40112;
+}
+
+header>.container>nav>a:hover {
+    padding-bottom: 7px;
+}
+
+
+/* header>.container>nav>a.active {
+    padding-bottom: 7px;
+} */
