@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>线性渐变</title>
+    <style type="text/css">
+        /*此处写代码*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .content {
+            width: 400px;
+            height: 150px;
+            margin: auto;
+        }
+        
+        .content>div {
+            width: 100px;
+            height: 150px;
+            float: left;
+        }
+        
+        .content>div>div {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .two {
+            margin-left: 50px;
+        }
+        
+        .three {
+            margin-left: 50px;
+        }
+        
+        .one>div {
+            background: linear-gradient(yellow, red);
+        }
+        
+        .two>div {
+            background: linear-gradient(to right, yellow, red);
+        }
+        
+        .three>div {
+            background: linear-gradient(to right bottom, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <!--此处写代码-->
+    <div class="content">
+        <div class="one">
+            <p>上下方向渐变</p>
+            <div></div>
+        </div>
+        <div class="two">
+            <p>左右方向渐变</p>
+            <div></div>
+        </div>
+        <div class="three">
+            <p>对角方向渐变</p>
+            <div></div>
+        </div>
+    </div>
+
+</html>
