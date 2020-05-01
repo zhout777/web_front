@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>2-3</title>
+    <style type="text/css">
+        /* 此处写代码*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .content {
+            width: 600px;
+            height: 400px;
+            background: red;
+            margin: auto;
+            position: relative;
+        }
+        
+        .star {
+            width: 0;
+            height: 0;
+            border-left: 65px solid transparent;
+            border-right: 65px solid transparent;
+            border-top: 40px solid yellow;
+            position: absolute;
+            top: 80px;
+            left: 40px;
+        }
+        
+        .star::before,
+        .star::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 65px solid transparent;
+            border-right: 65px solid transparent;
+            border-top: 40px solid yellow;
+            position: absolute;
+        }
+        
+        .star::before {
+            left: -65px;
+            top: -40px;
+            transform: rotate(-70deg);
+        }
+        
+        .star::after {
+            left: -65px;
+            top: -40px;
+            transform: rotate(-146deg);
+        }
+        
+        .star2 {
+            transform: scale(0.3) rotate(20deg);
+            left: 150px;
+            top: 20px;
+        }
+        
+        .star3 {
+            transform: scale(0.3) rotate(40deg);
+            left: 180px;
+            top: 70px;
+        }
+        
+        .star4 {
+            transform: scale(0.3) rotate(60deg);
+            left: 180px;
+            top: 120px;
+        }
+        
+        .star5 {
+            transform: scale(0.3) rotate(80deg);
+            left: 150px;
+            top: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 此处写代码 -->
+    <div class="content">
+        <div class="star1 star"></div>
+        <div class="star2 star"></div>
+        <div class="star3 star"></div>
+        <div class="star4 star"></div>
+        <div class="star5 star"></div>
+    </div>
+</body>
+
+</html>
