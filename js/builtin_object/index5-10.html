@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>员工合同到期时间</title>
+</head>
+
+<body>
+    <script>
+        //代码补充
+        var ruzhiYear = Number(prompt("请输入员工的入职年份"));
+        var ruzhiMonth = Number(prompt("请输入员工的入职月份"));
+        var ruzhiDay = Number(prompt("请输入员工的入职时间"));
+        console.log(typeof(ruzhiYear));
+
+        function jisuan(ruzhiYear, ruzhiMonth, ruzhiDay) {
+            // var date = new Date(ruzhiYear + 3, ruzhiMonth, ruzhiDay);等价于19，20，21，22行
+            var date = new Date();
+            date.setFullYear(ruzhiYear + 3);
+            date.setMonth(ruzhiMonth);
+            date.setDate(ruzhiDay);
+            document.write("该员工入职时间是：" + ruzhiYear + "-" + ruzhiMonth + "-" + ruzhiDay);
+            document.write("<br>");
+            document.write("该员工合同到期时间是：" + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate());
+        }
+        jisuan(ruzhiYear, ruzhiMonth, ruzhiDay);
+    </script>
+</body>
+
+</html>

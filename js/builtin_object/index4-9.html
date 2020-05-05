@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math.random()</title>
+</head>
+
+<body>
+    <script>
+        //补充代码
+        var input, num = Math.floor(Math.random() * 9 + 1);
+        console.log(num);
+        do {
+            input = Number(prompt("请输入你猜的数字"));
+            if (input < num) {
+                alert("输入的数字小了");
+            } else if (input > num) {
+                alert("输入的数字大了");
+            }
+        }
+        while (input != num);
+        alert("恭喜你猜对了");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首字母变大写</title>
+</head>
+
+<body>
+    <script>
+        //补充代码
+        var str = "all time is no time when it is past"
+
+        function firstToUpper(str) {
+            var arr = str.split(" ");
+            // var strNew = "";
+            for (var index = 0; index < arr.length; index++) {
+                arr[index] = arr[index].charAt(0).toUpperCase() + arr[index].substr(1);
+            }
+            return arr.join(" ");
+        }
+        document.write(str);
+        document.write("<br>");
+        document.write(firstToUpper(str));
+    </script>
+</body>
+
+</html>

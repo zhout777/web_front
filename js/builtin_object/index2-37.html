@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 封装indexOf方法</title>
+</head>
+
+<body>
+    <script>
+        //补充代码
+        var numberArray = [8, 3, 66, 34, 23, 11, 22, 23, 77];
+
+        function arrayIndexOf(arr, num) {
+            for (var index = 0; index < arr.length; index++) {
+                if (arr[index] === num) {
+                    return index;
+                }
+            }
+        }
+        document.write(arrayIndexOf(numberArray, 23));
+        document.write("<br>");
+        document.write(numberArray.indexOf(23));
+    </script>
+</body>
+
+</html>
