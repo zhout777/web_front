@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DOM的查找方法</title>
+</head>
+
+<body>
+    <div id="div1">第一个元素</div>
+    <div id="div2">第二个元素</div>
+    <div id="div3">第三个元素</div>
+    <script>
+        //补充代码
+        var divTag = document.getElementsByTagName("div");
+        for (var index = 1; index <= divTag.length; index++) {
+            alert(document.getElementById("div" + index));
+            console.log(document.getElementById("div" + index));
+        }
+    </script>
+</body>
+
+</html>

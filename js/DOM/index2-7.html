@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML事件</title>
+</head>
+
+<body>
+    <!--补充代码-->
+    <input type="button" value="开始" onmouseover="move(this,'purple')" onmouseout="move(this,'gray')">
+    <input type="button" value="结束" onmouseover="move(this,'yellow')" onmouseout="move(this,'gray')">
+    <script type="text/javascript">
+        //补充代码
+        function move(obj, zitiyanse) {
+            obj.style.color = zitiyanse;
+        }
+    </script>
+</body>
+
+</html>

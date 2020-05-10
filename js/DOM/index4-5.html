@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输入文本</title>
+</head>
+
+<body>
+    <p>字数限制在30字内，<span>您还可以输入<b>30</b> 字</span></p>
+    <textarea cols="50" rows="7" id="text"></textarea>
+    <script type="text/javascript">
+        //补充代码
+        var span = document.getElementsByTagName("span")[0];
+        var input = document.getElementById("text");
+        var limit = 30;
+        document.onkeyup = function() {
+            var len = input.value.length;
+            if (len <= limit) {
+                span.innerHTML = "您还可以输入" + (limit - len) + "字";
+            } else {
+                span.innerHTML = "您已超出" + (len - limit) + "字";
+            }
+        }
+    </script>
+</body>
+
+</html>
