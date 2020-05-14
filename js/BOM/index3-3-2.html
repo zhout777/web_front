@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index3-3-3.html">前往页面3.html</a><br><br>
+    <input type="button" value="回到页面1">
+    <script>
+        var btn = document.getElementsByTagName("input")[0];
+        btn.onclick = function() {
+            history.back();
+        }
+    </script>
+</body>
+
+</html>

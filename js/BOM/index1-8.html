@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输入框</title>
+</head>
+
+<body>
+    <input type="button" value="点击">
+    <script type="text/javascript">
+        //补充代码
+        var btn = document.getElementsByTagName("input")[0];
+        btn.onclick = function() {
+            var input = prompt("请输入文本\n当点击确定时，按钮的文字会变成输入的文本");
+            // 当点击取消按钮，input输出null
+            if (input != null) {
+                if (input != "") {
+                    this.value = input;
+                } else {
+                    alert("输入内容不能为空");
+                }
+            } else {
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>
