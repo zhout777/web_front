@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>函数定义的位置</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 在此处补充代码
+        var family = {
+            "me": "小明",
+            "wife": "小花",
+            setBaby: function(sex) {
+                if (sex == "female") {
+                    this.baby = "妞妞";
+                } else if (sex == "male") {
+                    this.baby = "牛牛";
+                }
+            }
+        };
+        family.setBaby("male");
+        document.write(family.baby);
+    </script>
+</body>
+
+</html>

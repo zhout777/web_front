@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>三种定义方式</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 定义函数方式：构造函数
+        var add = new Function("a", "b", "return a+b;");
+        var subtract = new Function("a", "b", "return a-b;");
+        var multiply = new Function("a", "b", "return a*b;");
+        var divide = new Function("a", "b", "return a/b;");
+        var ji = multiply(21, 32);
+        var shang = divide(24, 3);
+        var he = add(ji, shang);
+        var cha = subtract(he, 5);
+        document.write(cha);
+    </script>
+</body>
+
+</html>

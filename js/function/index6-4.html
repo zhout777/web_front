@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //在此处补充代码
+        var arr = [2, 4, 1, -1, 56, 3, -7];
+        // var min = Math.min.apply(window, arr);
+        function min() {
+            return Math.min.apply(this, arguments);
+        }
+        document.write(min.apply(window, arr));
+    </script>
+</body>
+
+</html>
