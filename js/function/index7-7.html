@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>什么可以做返回值</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 在此处补充代码
+        function calculate(num1, num2) {
+            // var add = num1 + num2;
+            // var subtract = num1 - num2;
+            // var multiply = num1 * num2;
+            // var divide = num1 / num2;
+            // return [add, subtract, multiply, divide];
+            return {
+                add: num1 + num2,
+                subtract: num1 - num2,
+                multiply: num1 * num2,
+                divide: num1 / num2
+            }
+        }
+        console.log(calculate(5, 2));
+    </script>
+</body>
+
+</html>
