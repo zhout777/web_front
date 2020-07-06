@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>正则表达式</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var str = 'regular expression = regexp';
+        /*此处写代码*/
+        var content = "regular expression = regexp";
+        // var str = /lar exp/;
+        var str = new RegExp("lar exp");
+        console.log(str.test(content));
+        console.log(str.exec(content));
+    </script>
+</body>
+
+</html>
